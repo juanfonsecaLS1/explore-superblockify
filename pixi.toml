@@ -1,0 +1,23 @@
+[workspace]
+authors = ["Juan P. Fonseca-Zamora <69847296+juanfonsecaLS1@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "explore-superblockify"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = ">=3.14.3,<3.15"
+osmnx = ">=2.1.0,<3"
+geopandas = ">=1.1.2,<2"
+rasterio = ">=1.5.0,<2"
+shapely = ">=2.1.2,<3"
+numba = ">=0.64.0,<0.65"
+scipy = ">=1.17.1,<2"
+tqdm = ">=4.67.3,<5"
+contextily = ">=1.7.0,<2"
+seaborn = ">=0.13.2,<0.14"
+psutil = ">=7.2.2,<8"
+superblockify = ">=1.0.1,<2"
+jupyterlab = ">=4.5.5,<5"
