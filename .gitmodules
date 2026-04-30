@@ -1,0 +1,3 @@
+[submodule "superblockify"]
+	path = superblockify
+	url = https://github.com/BikeNetKit/superblockify
