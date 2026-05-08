@@ -1,14 +1,7 @@
 import osmnx as ox
-import networkx as nx
 import superblockify.superblockify as sb
 from preprocess_graph import preprocess_graph
-import momepy as mp
-import pandas as pd
-import geopandas as gpd
 import os
-from libpysal import graph
-import numpy as np
-import matplotlib.pyplot as plt
 
 
 cities = [
@@ -17,14 +10,14 @@ cities = [
     {"name": "Rome", "lat": 41.89900799198937, "lon": 12.512797548177907},
     {"name": "Cairo", "lat": 30.036716997454857, "lon": 31.23947439245143},
     {"name": "Salt Lake City", "lat": 40.75984495218752, "lon": -111.88769690322184},
-    {"name": "Bogota", "lat": 4.691389013888271, "lon": -74.06823532051276},
+    {"name": "Bogota", "lat": 4.672418356938063, "lon": -74.07082779344886},
     {"name": "Leeds", "lat": 53.81303429075668,  "lon": -1.508881353201933},
     {"name": "Milton Keynes", "lat": 52.0367171540023, "lon": -0.7324001661371712},
     {"name": "Lisbon", "lat": 38.72778849555562, "lon": -9.162267565552924},
     {"name": "New York", "lat": 40.7589664816669, "lon": -73.96121069380527},
     {"name": "Brasilia", "lat": -15.76133509896713, "lon": -47.88377302616466},
     {"name": "Sao Paulo", "lat": -23.54468352821393, "lon": -46.67047368527096},
-
+    {"name": "Copenhagen", "lat": 55.677804798915886, "lon": 12.566120760194186},
 ]
 
 BUFFER_M = 3500 
@@ -69,5 +62,7 @@ for city_info in cities:
             replace_max_speeds=False
             )
     
-        part.save(save_graph_copy=True)
+        part.save(save_graph_copy=True,)
         del part
+
+
